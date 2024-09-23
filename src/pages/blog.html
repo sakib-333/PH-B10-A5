@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Blog</title>
+  </head>
+  <body class="font-lexend">
+    <div class="max-w-screen-xl mx-auto">
+      <header class="sticky top-0 z-50 border-b-2">
+        <nav class="navbar flex justify-between p-4 bg-donate-100">
+          <button class="btn bg-donate-200" id="visit-home">Home</button>
+          <div class="hidden md:flex md:items-center md:space-x-2">
+            <img src="../assets/logo.png" alt="logo" />
+            <h1 class="text-xl font-bold">Donate Bangladesh</h1>
+          </div>
+          <div class="flex items-center space-x-2">
+            <img src="../assets/coin.png" alt="coin" />
+            <h1 class="text-base md:text-xl text-zinc-500">
+              <span>5500</span> BDT
+            </h1>
+          </div>
+        </nav>
+      </header>
+      <main class="p-4">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">
+          Important FAQ <i class="fa-solid fa-question fa-shake"></i>
+        </h1>
+        <div class="join join-vertical w-full mt-4">
+          <!-- FAQ-1 start-->
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-bold">
+              What is the Document Object Model (DOM)?
+            </div>
+            <div class="collapse-content">
+              <p class="text-justify">
+                The Document Object Model (DOM) is a cross-platform and
+                language-independent interface that treats an HTML or XML
+                document as a tree structure wherein each node is an object
+                representing a part of the document. The DOM represents a
+                document with a logical tree. Each branch of the tree ends in a
+                node, and each node contains objects. DOM methods allow
+                programmatic access to the tree; with them one can change the
+                structure, style or content of a document. Nodes can have event
+                handlers (also known as event listeners) attached to them. Once
+                an event is triggered, the event handlers get executed.
+              </p>
+            </div>
+          </div>
+          <!-- FAQ-1 end-->
+
+          <!-- FAQ-2 start-->
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-bold">
+              How do you select an element from the DOM?
+            </div>
+            <div class="collapse-content">
+              <ul class="space-y-2">
+                <li>
+                  1. getElementById: <br />
+                  const element = document.getElementById('myId');
+                </li>
+                <li>
+                  2. getElementsByClassName (returns a live HTMLCollection):
+                  <br />
+                  const elements = document.getElementsByClassName('myClass');
+                </li>
+                <li>
+                  3. getElementsByTagName (also returns a live HTMLCollection):
+                  <br />
+                  const elements = document.getElementsByTagName('div');
+                </li>
+                <li>
+                  4. querySelector (returns the first matching element):
+                  <br />
+                  const element = document.querySelector('.myClass'); // For
+                  class <br />
+                  const element = document.querySelector('#myId'); // For ID
+                  <br />
+                  const element = document.querySelector('div'); // For tag
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- FAQ-2 end-->
+
+          <!-- FAQ-3 start-->
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-bold">
+              What is event delegation in the context of the DOM, and why is it
+              usefull?
+            </div>
+            <div class="collapse-content">
+              <p class="text-justify">
+                Event delegation is a technique where a single event listener on
+                a parent element manages events for child elements. It's useful
+                for improving performance, simplifying code, and automatically
+                handling dynamically added elements, making event management
+                more efficient.
+              </p>
+            </div>
+          </div>
+          <!-- FAQ-3 end-->
+
+          <!-- FAQ-4 start-->
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-bold">
+              How do you manipulate an element's attributes and styles using the
+              DOM?
+            </div>
+            <div class="collapse-content">
+              <p class="text-justify">
+                You can manipulate an element's attributes using setAttribute,
+                getAttribute, and removeAttribute methods. To change styles,
+                access the style property of the element. For example,
+                element.style.color = 'red'; updates the color, while
+                element.setAttribute('src', 'image.jpg'); changes an attribute
+                like the source of an image.
+              </p>
+            </div>
+          </div>
+          <!-- FAQ-4 end-->
+        </div>
+      </main>
+    </div>
+    <script src="../js/blog.js"></script>
+  </body>
+</html>
