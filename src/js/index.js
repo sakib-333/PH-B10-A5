@@ -37,6 +37,8 @@ for (let sector of sectors) {
           Number(yourCurrentBalanceField.innerText) - givenDonation;
         document.getElementById(`sector-input-${sector.id}`).value = "";
         createDonationHistory(donationHistroryDiv, sector, givenDonation);
+
+        document.getElementById("my_modal_1").showModal();
       } else {
         window.alert("Invalid donation!");
       }
