@@ -18,12 +18,12 @@
           <div class="flex items-center space-x-2">
             <img src="./src/assets/coin.png" alt="coin" />
             <h1 class="text-base md:text-xl text-zinc-500">
-              <span>5500</span> BDT
+              <span id="your-current-balance">5500</span> BDT
             </h1>
           </div>
         </nav>
         <div
-          class="flex justify-center space-x-4 py-5 backdrop-blur-xl border-b-2"
+          class="flex justify-center space-x-4 py-4 backdrop-blur-xl border-b-2"
         >
           <button class="btn bg-donate-200 outline-0" id="btn-donation">
             Donation
@@ -32,7 +32,8 @@
         </div>
       </header>
       <main class="p-4 space-y-8">
-        
+        <div id="donation-sectors-div"></div>
+        <div class="space-y-4 hidden" id="donation-history-div"></div>
       </main>
     </div>
     <script src="./src/js/utility.js"></script>
