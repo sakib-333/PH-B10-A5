@@ -1965,10 +1965,6 @@ details.collapse summary::-webkit-details-marker{
   margin-top: 1.5rem;
 }
 
-.mt-2{
-  margin-top: 0.5rem;
-}
-
 .flex{
   display: flex;
 }
@@ -2093,10 +2089,6 @@ details.collapse summary::-webkit-details-marker{
   padding-bottom: 1rem;
 }
 
-.text-center{
-  text-align: center;
-}
-
 .text-justify{
   text-align: justify;
 }
@@ -2110,14 +2102,9 @@ details.collapse summary::-webkit-details-marker{
   line-height: 2rem;
 }
 
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-base{
@@ -2128,11 +2115,6 @@ details.collapse summary::-webkit-details-marker{
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold{

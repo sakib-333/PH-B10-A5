@@ -15,7 +15,10 @@ function createElement(element) {
 
 function checkValidDonation(donation) {
   const amount = Number(donation);
-  return typeof amount !== NaN && amount >= 0;
+  const accountBalence = Number(
+    document.getElementById("your-current-balance").innerText
+  );
+  return typeof amount !== NaN && amount >= 1 && accountBalence >= donation;
 }
 
 function increaseSectorDonation(id, donation) {
